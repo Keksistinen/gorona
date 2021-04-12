@@ -24,9 +24,5 @@
   "bugs": {
     "url": "https://github.com/VincentGarreau/particles.js/issues"
   },
-  "dependencies": {
-    "fs": "0.0.1-security",
-    "jsonstat-toolkit": "^1.2.7",
-    "lodash": "^4.17.21"
-  }
+  "dependencies": {}
 }

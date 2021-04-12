@@ -6,8 +6,6 @@ async function getData() {
   async function main() {
     console.log(await getData());
   }
-
-
   
   async function main() {
     data = await getData();
