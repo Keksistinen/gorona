@@ -1,6 +1,6 @@
 body {
     color: rgb(73, 71, 71);
-    /* background-image: url("huutista.jpg"); */
+    background-image: url("css/huutista.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,8 +22,6 @@ div {
 .boxi {
     font-size: 3vmin;
     text-shadow: none;
-    
-
 
 }
 
@@ -32,54 +30,45 @@ div {
     text-shadow: none;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    margin-left: 20%;
-    margin-right: 20%;
-    height: 200px;
-    border-radius: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 1%;
 }
 
-/* h1 {
+.boxi3 {
+    font-size: 3vmin;
+    text-shadow: none;
+}
+
+.footer {
+    font-size: medium;
+    text-shadow: none;
+    right: 0;
+    position: absolute;
+    padding: 0 20px 20px 0;
+    bottom: 0;
     color: white;
-    position: sticky;
-} */
+}
 
-/* .boksi {
-    height: fit-content;
-    border-radius: 16px;
-    padding: 0.5rem;
-} */
-
-/* .boksi2 {
-    margin: 5px;
-    background-color: transparent;
-    height: 200px;
-    width: 300px;
-    padding: 8px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: rgb(48, 52, 54);
-    float: left;
-} */
-/* 
-.boksi3 {
-    margin: 5px;
-    background-color: transparent;
-    height: 200px;
-    width: 300px;
-    padding: 8px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: rgb(48, 52, 54);
-    float: left;
-} */
+.datasource {
+    font-size: medium;
+    text-shadow: none;
+    right: 1;
+    position: absolute;
+    padding: 0 20px 20px 0;
+    bottom: 0;
+    color: white;
+}
 
 @font-face {
     font-family: "comic sans";
-    src: url("comic.ttf");
+    src: url("/fonts/comic.ttf");
     font-display: swap;
 }
 
 @font-face {
     font-family: "minecraftia";
-    src: url("Minecraftia.otf");
+    src: url("fonts/Minecraftia.otf");
 }
