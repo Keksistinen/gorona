@@ -11,6 +11,13 @@ html {
     height: 100%;
 }
 
+.kaikki {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+}
+
 .bg-image {
     background-image: url("css/kuve10.jpeg");
     background-attachment: fixed;
@@ -36,7 +43,6 @@ div {
 .boxi {
     font-size: 3vmin;
     text-shadow: none;
-
 }
 
 .boxi2 {
