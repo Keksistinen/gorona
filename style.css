@@ -60,9 +60,8 @@ div {
 
 .boxi3 {
     font-size: 1.5vmin;
-    text-shadow: none;
+    text-shadow: 2px 2px rgb(0, 0, 0);
     font-family: "minecraft";
-    padding: 1%;
     color: white;
 }
 
@@ -71,6 +70,7 @@ div {
     text-shadow: none;
     font-family: "minecraft";
     color: white;
+    text-shadow: 2px 2px rgb(0, 0, 0);
 }
 .footer {
     font-size: medium;
@@ -88,7 +88,7 @@ div {
     text-shadow: none;
     right: 1;
     position: absolute;
-    padding: 0 20px 20px 0;
+    padding: 0 0 20px 20px;
     bottom: 0;
     color: white;
     font-family: "minecraftia";
