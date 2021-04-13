@@ -19,7 +19,7 @@ html {
 }
 
 .bg-image {
-    background-image: url("css/kuve10.jpeg");
+    background-image: url("kuvat/kuve10.jpeg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,18 +42,18 @@ div {
 
 .boxi {
     font-size: 3vmin;
-    text-shadow: none;
+    text-shadow: 2px 2px rgb(119, 117, 117);
 }
 
 .boxi2 {
     font-size: large;
-    text-shadow: none;
+    text-shadow: 2px 2px black;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     margin-left: 35%;
     margin-right: 35%;
     height: fit-content;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 1%;
     font-family: "minecraft";
 }
@@ -92,12 +92,6 @@ div {
     bottom: 0;
     color: white;
     font-family: "minecraftia";
-}
-
-@font-face {
-    font-family: "comic sans";
-    src: url("/fonts/comic.ttf");
-    font-display: swap;
 }
 
 @font-face {

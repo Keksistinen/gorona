@@ -9,19 +9,21 @@ async function getData() {
   
   async function main() {
     data = await getData();
-    var tapauksia_yht = data.features.filter(x=>x.attributes.kunta=='Porvoo')[0].attributes.tapauksia_yhteensa
-    var vaesto = data.features.filter(x=>x.attributes.kunta=='Porvoo')[0].attributes.Vaesto
-    var tapauksia = data.features.filter(x=>x.attributes.kunta=='Porvoo')[0].attributes.tapauksia
-    var last14 = data.features.filter(x=>x.attributes.kunta=='Porvoo')[0].attributes.tapauksia_14vrk
 
-    // tärkee työkalu - älä poista console.log(data.features.filter(x=>x.attributes.kunta=='Porvoo')[0])
-    // tämä kans tärkee työkalu - älä poista console.log(tapauksia)
+    let { tapauksia_yhteensa, Vaesto, tapauksia, tapauksia_14vrk, date } = data.features.filter(x=>x.attributes.kunta=='Porvoo')[0].attributes
 
-    document.querySelector('#tapauksia_yht').innerHTML=tapauksia_yht
-    document.querySelector('#vaesto').innerHTML=vaesto
+    date = new Date(date)
+    date = date.toLocaleDateString('fi-FI')
+
+    document.querySelector('#tapauksia_yht').innerHTML=tapauksia_yhteensa
+    document.querySelector('#vaesto').innerHTML=Vaesto
     document.querySelector('#tapauksia').innerHTML=tapauksia
-    document.querySelector('#last14').innerHTML=last14
+    document.querySelector('#last14').innerHTML=tapauksia_14vrk
+    document.querySelector('#pvm').innerHTML=date
   }
+  
+  main()
+
 
  // tapauksia_yht = tapauksia yhteensä koko ajalta
  // vaesto = väestö
@@ -29,4 +31,6 @@ async function getData() {
  // last14 = 14 vuorokauden ajalta tapaukset
 
 
-main()
+    // tärkee työkalu - älä poista console.log(data.features.filter(x=>x.attributes.kunta=='Porvoo')[0])
+    // tämä kans tärkee työkalu - älä poista console.log(tapauksia)
+
