@@ -1,13 +1,24 @@
 body {
     color: rgb(73, 71, 71);
-    background-image: url("css/huutista.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 10px;
+    margin: 0px;
     font-family: "minecraftia";
     font-size: 10vmin;
     text-shadow: 0.4vmin 0.3vmin rgb(0, 0, 0);
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.bg-image {
+    background-image: url("css/kuve10.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    filter: blur(8px);
+    
 }
 
 .start {
