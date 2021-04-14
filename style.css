@@ -1,10 +1,11 @@
 body {
-    color: rgb(73, 71, 71);
+    color: white;
     margin: 0px;
     font-family: "minecraftia";
     font-size: 10vmin;
     text-shadow: 0.4vmin 0.3vmin rgb(0, 0, 0);
     height: 100%;
+    background-color: black;
 }
 
 html {
@@ -19,13 +20,13 @@ html {
 }
 
 .bg-image {
-    background-image: url("kuvat/kuve10.jpeg");
+    background-image: url("kuvat/kuve10.jpg");
+    animation: fadeIn 4s;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
     filter: blur(8px);
-    
 }
 
 .start {
@@ -102,4 +103,9 @@ div {
 @font-face {
     font-family: "minecraft";
     src: url("fonts/minecraft.ttf");
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
