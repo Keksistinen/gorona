@@ -10,14 +10,14 @@ async function getData() {
   async function main() {
     data = await getData();
 
-    let { tapauksia_yhteensa, Vaesto, tapauksia, tapauksia_14vrk, date } = data.features.filter(x=>x.attributes.kunta=='Porvoo')[0].attributes
+    let { tapauksia_yhteensa, Vaesto, tapauksia_14vrk, date } = data.features.filter(x=>x.attributes.kunta=='Porvoo')[0].attributes
 
     date = new Date(date)
     date = date.toLocaleDateString('fi-FI')
 
     document.querySelector('#tapauksia_yht').innerHTML=tapauksia_yhteensa
     document.querySelector('#vaesto').innerHTML=Vaesto
-    document.querySelector('#tapauksia').innerHTML=tapauksia
+    // document.querySelector('#tapauksia').innerHTML=tapauksia
     document.querySelector('#last14').innerHTML=tapauksia_14vrk
     document.querySelector('#pvm').innerHTML=date
   }
